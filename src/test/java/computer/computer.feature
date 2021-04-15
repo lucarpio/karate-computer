@@ -68,10 +68,10 @@ Scenario Outline: Crear un entrenador en PokemonApp
   And input(pokePwdInput, <Pwd>)
   When submit().click('/html/body/div/main/div/div/form/div[3]/button')
   Then waitForUrl(pokeUrl + '/Entrenador')
-  Then match text('/html/body/div/main/div/div/h1') contains pokeUserInput
+  Then match text('/html/body/div/main/div/div/h1') contains 'Bienvenid'
 
   Examples:
   |Nombre       |Apellido   |User         |Pwd            |FecN     |
-  |'Axcel'      |'Carpio'   |'generico7'  |'Servidores5!' |01022000 |
-  |'Christian'  |'Carpio'   |'generico8'  |'Servidores5!' |23121997 |
-  |'Maria'      |'Jimenez'  |'generico9'  |'Servidores5!' |01021995 |
+  |'Axcel'      |'Carpio'   |'generico10'  |'Servidores5!' |01022000 |
+  |'Christian'  |'Carpio'   |'generico11'  |'Servidores5!' |23121997 |
+  |'Maria'      |'Jimenez'  |'generico12'  |'Servidores5!' |01021995 |
