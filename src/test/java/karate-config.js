@@ -10,7 +10,23 @@ function fn() {
 	var config = {
 		/* -------------------------- PATHS -------------------------- */
 		path_user: '/v2/user',
-		path_pet: '/v2/pet'
+		path_pet: '/v2/pet',
+		baseUrl: 'https://computer-database.gatling.io',
+
+		//API PETS
+		petUrl: '',
+
+		// POKEMON
+		pokeUrl: 'https://app-mipokemon.herokuapp.com',
+		pokeRegistroBtn: '/html/body/header/nav/div/div/ul/li[5]/a',
+		pokeUserInput: '#username',
+		pokePwdInput: '#pwd',
+		pokeNomInput: '#Nombre',
+		pokeApeInput: '#Apellido',
+		pokeNacInput: '#FecNac',
+		pokePuebSelect: '#PuebloId',
+		pokeRegSubmit: '/html/body/div/main/div/div/form/div[7]/button'
+
 	}
 
 	/* -------------------------- SETTINGS -------------------------- */
